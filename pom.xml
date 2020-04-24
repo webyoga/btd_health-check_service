@@ -37,7 +37,15 @@
     </dependency>
   </dependencies>
 
-  <distributionManagement>
+   <distributionManagement>
+    <repository>
+      <id>customservice</id>
+      <name>healthApp</name>
+      <url>file://qwe</url>
+    </repository>
+  </distributionManagement>      
+         
+  <!-- <distributionManagement>
     <repository>
       <id>release</id>
       <name>Internal Releases</name>
@@ -48,7 +56,7 @@
       <name>Internal Snapshots</name>
       <url>https://artifactory.billing.ru/artifactory/peterservice-snapshots</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement>  -->
 
   <build>
     <pluginManagement>
