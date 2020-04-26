@@ -41,6 +41,6 @@
       when: diff | int != 0
 
     - name: Run Tomcat container
-      shell: 'docker pull danpil/nxbootcamp:orlov.alexey.health-check_service.1.0.0-snapshot && docker run -d -p 8085:8080 danpil/nxbootcamp:orlov.alexey.health-check_service.1.0.0-snapshot'
+      shell: 'docker pull danpil/nxbootcamp:orlov.alexey.health-check_service.1.0.0-snapshot && docker run -d -p 8087:8080 danpil/nxbootcamp:orlov.alexey.health-check_service.1.0.0-snapshot'
       when: diff | int != 0 or run | int == 0
 
