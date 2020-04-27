@@ -112,8 +112,8 @@
           </executions>
           <configuration>
             <dockerfile>Dockerfile</dockerfile>
-            <username>webyoga</username>
-            <password>vegetarian767</password>
+           <!--  <username>webyoga</username>  -->
+           <!-- <password>vegetarian767</password>  -->
             <repository>danpil/nxbootcamp</repository>
             <!--  <tag>orlov.alexey.health-check_service.${project.version}</tag>   -->
             <tag>orlov.alexey.health-check_service.1.0.0-snapshot</tag>
