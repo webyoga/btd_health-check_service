@@ -22,7 +22,7 @@
       command: python3 -m pip install docker
 
     - name: Docker login
-      shell: 'docker login docker.com -u {{ user }} -p {{ pass }}'
+      shell: 'docker login docker.com -u {{ user }} -p {{ password }}'
 
     - name: See running containers
       shell: docker ps --filter name=tomcat -q
