@@ -22,7 +22,7 @@
       command: python3 -m pip install docker
 
     - name: Docker login
-      shell: 'docker login docker.com -u webyoga -p vegetarian767'
+      shell: 'docker login docker.com -u {{ user }} -p {{ password }}'
 
     - name: See running containers
       shell: docker ps --filter name=tomcat -q
@@ -41,6 +41,6 @@
       when: diff | int != 0
 
     - name: Run Tomcat container
-      shell: 'docker pull danpil/nxbootcamp:orlov.alexey.health-check_service.1.0.0-snapshot && docker run -d -p 8087:8080 danpil/nxbootcamp:orlov.alexey.health-check_service.1.0.0-snapshot'
+      shell: 'docker pull danpil/nxbootcamp:orlov.alexey.health-check_service.{{ version }} && docker run -d -p 8087:8080 danpil/nxbootcamp:orlov.alexey.health-check_service.{{ version }}'
       when: diff | int != 0 or run | int == 0
 
