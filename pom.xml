@@ -114,7 +114,6 @@
             <dockerfile>Dockerfile</dockerfile>
             <repository>danpil/nxbootcamp</repository>
             <tag>orlov.alexey.health-check_service.1.0.0-snapshot</tag>
-      <!--  <tag>orlov.alexey.health-check_service.${project.version}</tag>   -->
           </configuration>
         </plugin>
       </plugins>
